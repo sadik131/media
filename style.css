@@ -51,6 +51,7 @@ h2 {
 .container {
     margin-left: 75px;
     margin-top: 50px;
+    padding: 25px 0;
 }
 
 .container .heading {
@@ -148,6 +149,9 @@ h2 {
 }
 .specialise{
     margin-bottom: 0;
+}
+.specialise{
+    width: 100%;
 }
 .specialise .container{
     width: 100%;
@@ -295,6 +299,9 @@ h2 {
 .craft .container{
     margin: 0;
     background: #0c115a;
+}
+section.craft{
+    width: 100%;
 }
 .craft table .tabke-data{
     display: flex;
@@ -571,6 +578,7 @@ h2 {
 }
 .expraincess{
     background: #fff;
+    width: 100%;
 }
 .expraincess .container h1{
     color:black
@@ -626,6 +634,7 @@ h2 {
 .customer{
     background: #f4f4ff;
     padding: 1px;
+    width: 100%;
 }
 
 /* custom storise */
@@ -882,21 +891,23 @@ h2 {
 }
 
 .custom-shape-divider-top-1661962272 .shape-fill {
-    fill: #f4f4ff;
+    fill: #0c115a;
 }
 
 .footer{
-    background: #0c115a;
-    padding-bottom: 100px;
+    width: 100%;
 }
 .footer .content{
+    background: #0c115a;
     display: flex;
+    padding: 135px 0;
     align-items: center;
     flex-direction: column;
 }
 .footer .content h1{
     font-size: 28px;
     font-weight: 900;
+
 }
 .footer .content h3{
     font-size: 22px;
@@ -969,8 +980,53 @@ h2 {
 
 
 /* calender css */
-/* 
-:root {
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+
+  /* calender start */
+
+
+
+  :root {
     --dark-body: #4d4c5a;
     --dark-main: #141529;
     --dark-second: #79788c;
@@ -1005,6 +1061,7 @@ h2 {
     --bg-second: var(--light-second);
     --color-hover: var(--light-hover);
     --color-txt: var(--light-text);
+    margin-top: 25px;
 }
 
 * {
@@ -1031,6 +1088,11 @@ body {
     position: relative;
     overflow: hidden;
     /* transform: scale(1.25); */
+}
+
+.calendar .calendar-footer button{
+    padding: 10px 25px;
+    border: 0;
 }
 
 .light .calendar {
@@ -1279,8 +1341,93 @@ body {
         transform: translateY(0);
         opacity: 1;
     }
-} */
+}  
 
+/* collaps start */
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+ .collaps .menegment .content {
+    padding: 0 18px;
+    display: block;
+    overflow: hidden;
+    color: black;
+  }
+
+
+/* collaps end */
 
 /* calender css end */
 
+.custom-shape-divider-top-1662184997 {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1662184997 svg {
+    position: relative;
+    display: block;
+    width: calc(289% + 1.3px);
+    height: 127px;
+}
+
+.custom-shape-divider-top-1662184997 .shape-fill {
+    fill: #f4f4ff;
+}
+
+.custom-shape-divider-bottom-1662185875 {
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1662185875 svg {
+    position: relative;
+    display: block;
+    width: calc(171% + 1.3px);
+    height: 32px;
+}
+
+.custom-shape-divider-bottom-1662185875 .shape-fill {
+    fill: #587eed;
+}
+
+.custom-shape-divider-top-1662186203 {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1662186203 svg {
+    position: relative;
+    display: block;
+    width: calc(234% + 1.3px);
+    height: 49px;
+}
+
+.custom-shape-divider-top-1662186203 .shape-fill {
+    fill: #587eed;
+}

@@ -51,7 +51,7 @@ h2 {
 .container {
     margin-left: 75px;
     margin-top: 50px;
-    padding: 25px 0;
+    padding: 25px 10px;
 }
 
 .container .heading {
@@ -743,7 +743,7 @@ section.craft{
 }
 @media only screen and (max-width:600px){
     .offer-section .container img{
-        width: -webkit-fill-available;
+        width: 95%;
     }
 
 }@media only screen and (max-width:600px){
@@ -817,7 +817,6 @@ section.craft{
         text-align: center;
     }
     .investment .carcel h1{
-        position: absolute;
         color: white;
         font-size: 80px;
         margin-left: 50px;
